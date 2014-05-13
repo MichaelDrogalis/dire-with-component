@@ -24,7 +24,6 @@
 
   (stop [component]
     (println "Stopping the Event Handler")
-
     (async/close! (:ch component))
     component))
 
